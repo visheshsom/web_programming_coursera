@@ -39,7 +39,7 @@ function birthday (event)
 		
 		theDate = (((theDate / 1000) / 60) / 60) / 24;
 		
-		var message = "<h4>Your Birthday Is After : " + theDate + " days</h4>";
+		var message = "<h4>" + theDate + " Days left</h4>";
 
 
 		document
