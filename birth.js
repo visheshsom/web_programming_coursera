@@ -12,14 +12,14 @@ function birthday (event)
 	var birthday = new Date();
 	var cd = new Date();
 
-	cd.setDate(02,11,1996);
+	cd.setDate(09,22,1997);
 
 	birthday.setDate(date1);
 	birthday.setMonth(month1);
 
 
 
-	if (birthday.setDate(date1)&&birthday.setMonth(month1) < cd.setDate(02,11,1996))
+	if (birthday.setDate(date1)&&birthday.setMonth(month1) < cd.setDate(09,22,1997))
     {
 	    var theDate = cd - birthday ;
 		
@@ -33,7 +33,7 @@ function birthday (event)
 
 	
 
-	if (birthday.setDate(date1)&&birthday.setMonth(month1) > cd.setDate(02,11,1996))
+	if (birthday.setDate(date1)&&birthday.setMonth(month1) > cd.setDate(09,22,1997))
 	{
 		var theDate = birthday - cd ;
 		
