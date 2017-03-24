@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded",
                 attenL=30;
                 student_total=attenL+attenT;
                 total_atten=res.Attendance_Theory1+res.AttendanceLecture1;
-                final_total=student_total/total_atten*100;
+                alert("Attendance Percentage"+final_total=student_total/total_atten*100);
               }
               else 
               {
