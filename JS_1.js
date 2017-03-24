@@ -1,37 +1,44 @@
 document.addEventListener("DOMContentLoaded",
   function (event) {
     
-    // Unobtrusive event binding
+   
     document.querySelector("button")
       .addEventListener("click", function () {
         
-        // Call server to get the name
         $ajaxUtils
           .sendGetRequest("Stu_Attendance.json", 
-            function (res) {
+            
+            function fetch_student(res) 
+            {
               
-                JSONArray  weeklyflash = json.getJSONArray("");
-                JSONObject e = weeklyflash.getJSONObject(i);     
-                String bulan1 = e.getString("vishesh");
-                String bulan2 = e.getString("siddharth");
+              var name = document.getElementById("s_name").value;
+              
+              var message = res.firstname 
+              if (message===name) {
+                
+                message += " likes Maxican food";
+
+                attenT=40;
+                attenL=30;
+                student_total=attenL+attenT;
+                total_atten=res.Attendance_Theory1+res.AttendanceLecture1;
+                final_total=student_total/total_atten*100;
               }
-              if (bulan1 == "siddharth")
+              else 
               {
-              map.put("Attendance", e.getString("JAVA")); 
-              total1=40/res.AttendanceTS+res.AttendanceLS*100;
-               document.querySelector("#content")
-                .innerHTML = "<h2>" + total1 + "</h2>";
-              }
-              else if (bulan2 == "Vishesh")
-              {
-              map.put("Attendance", e.getString("JAVA")); 
-              total2=40/res.AttendanceVS+res.AttendanceLV*100;
-               document.querySelector("#content")
-                .innerHTML = "<h2>" + total2 + "</h2>";
+                message += " Doesn't like Maxican food";
               }
               
-                 
-            });
+              document.querySelector("#content")
+                .innerHTML = "<h2>" + res.message + "</h2>";
+
+              var name = res.responseText;
+
+              document.querySelector("#content")
+                .innerHTML = "<h2>Hello " + res.name + "!</h2>";
+
+
+          });
       });
   }
 );
