@@ -19,7 +19,6 @@ function getRequestObject() {
   }
 }
 
-
 // Makes an Ajax GET request to 'requestUrl'
 ajaxUtils.sendGetRequest = 
   function(requestUrl, responseHandler, isJsonResponse) {
@@ -61,7 +60,6 @@ function handleResponse(request,
 
 // Expose utility to the global object
 global.$ajaxUtils = ajaxUtils;
-
 
 
 })(window);
