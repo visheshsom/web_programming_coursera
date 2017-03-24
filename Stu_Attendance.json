@@ -1,23 +1,24 @@
-"firstname":"Vishesh"{
+{
+	"firstname":"Vishesh",
 	
 	"Courses":"JAVA",
 			
 	"Attendance_Theory1":50,
 			
-	"AttendanceLecture1":50
-			
-};
-"firstname":"Siddharth"{
+	"AttendanceLecture1":50,
 	
+	"Flag":true
+			
+}
+{
+	"firstname":"Siddharth",
+
 	"Courses":"JAVA",
 			
 	"Attendance_Theory2":50,
 			
-	"AttendanceLecture2":50
+	"AttendanceLecture2":,
+
+	"Flag":false
 			
-};
-
-	
-
-
-
+}
