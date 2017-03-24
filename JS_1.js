@@ -30,12 +30,12 @@ document.addEventListener("DOMContentLoaded",
               }
               
               document.querySelector("#content")
-                .innerHTML = "<h2>" + res.message + "</h2>";
+                .innerHTML = "<h2>" + message + "</h2>";
 
               var name = res.responseText;
 
               document.querySelector("#content")
-                .innerHTML = "<h3>Hello " + res.final_total + "!</h3>";
+                .innerHTML = "<h3>Hello " + final_total + "!</h3>";
 
 
           });
