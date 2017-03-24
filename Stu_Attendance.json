@@ -1,48 +1,23 @@
-{"Vishesh":
-	[
-		{"firstName":"Vishesh"},
-		{"lastName":"Sompura"},
-		{"Courses":
-			[
-				{"JAVA"}
-			]
-		}
-		{"AttendanceTV":
-			[
-				{"JAVA":15},
-			
-			]
-		}
-		{"AttendanceLV":
-			[
-				{"JAVA":20},
-			
-			]
-		}
+"firstname":"Vishesh"{
 	
-	]
-}
-{"Siddharth":
-	[
-		{"firstName":"Siddharth"},
-		{"lastName":"Awatramani"},
-		{"Courses":
-			[
-				{"JAVA"}
-			]
-		}
-		{"AttendanceTS":
-			[
-				{"JAVA":15},
+	"Courses":"JAVA",
 			
-			]
-		}
-		{"AttendanceLS":
-			[
-				{"JAVA":20},
+	"Attendance_Theory1":50,
 			
-			]
-		}
+	"AttendanceLecture1":50
+			
+};
+"firstname":"Siddharth"{
 	
-	]
-}
+	"Courses":"JAVA",
+			
+	"Attendance_Theory2":50,
+			
+	"AttendanceLecture2":50
+			
+};
+
+	
+
+
+
