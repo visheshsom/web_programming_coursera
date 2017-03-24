@@ -1,0 +1,48 @@
+{"Vishesh":
+	[
+		{"firstName":"Vishesh"},
+		{"lastName":"Sompura"},
+		{"Courses":
+			[
+				{"JAVA"}
+			]
+		}
+		{"AttendanceTV":
+			[
+				{"JAVA":15},
+			
+			]
+		}
+		{"AttendanceLV":
+			[
+				{"JAVA":20},
+			
+			]
+		}
+	
+	]
+}
+{"Siddharth":
+	[
+		{"firstName":"Siddharth"},
+		{"lastName":"Awatramani"},
+		{"Courses":
+			[
+				{"JAVA"}
+			]
+		}
+		{"AttendanceTS":
+			[
+				{"JAVA":15},
+			
+			]
+		}
+		{"AttendanceLS":
+			[
+				{"JAVA":20},
+			
+			]
+		}
+	
+	]
+}
