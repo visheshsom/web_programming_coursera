@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded",
               var name = res.responseText;
 
               document.querySelector("#content")
-                .innerHTML = "<h2>Hello " + res.name + "!</h2>";
+                .innerHTML = "<h3>Hello " + res.name + "!</h3>";
 
 
           });
