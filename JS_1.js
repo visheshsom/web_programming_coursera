@@ -6,38 +6,46 @@ document.addEventListener("DOMContentLoaded",
       .addEventListener("click", function () {
         
         $ajaxUtils
-          .sendGetRequest("Stu_Attendance.json", 
+          .sendGetRequest("JSON_DATA/Stu_Attendance.json", 
             
             function fetch_student(res) 
             {
               
-              var name = document.getElementById("s_name").value;
+              var name = 
+            document.getElementById("s_name").value;
               
               var message = res.firstname 
-               attenT=40;
-               attenL=30;
-               student_total=attenL+attenT;
-               total_atten=res.Attendance_Theory1+res.AttendanceLecture1;
-               final_total=student_total/total_atten*100;
-               alert(final_total);
-              if (message===name) {
+
+                attenT1=40;
+                attenL1=30;
+                student_total1=attenL1+attenT1;
+                total_atten1=res.Attendance_Theory1+res.AttendanceLecture1;
+                final_total1=student_total1/total_atten1*100;
+
+                attenT1=40;
+                attenL1=30;
+                student_total1=attenL1+attenT1;
+                total_atten1=res.Attendance_Theory2+res.AttendanceLecture2;
+                final_total1=student_total1/total_atten1*100
                 
-                message += " likes Maxican food";
 
-               
-              }
-              else 
-              {
-                message += " Doesn't like Maxican food";
-              }
               
-              document.querySelector("#content")
-                .innerHTML = "<h2>" + message + "</h2>";
+                for (var i = 0; i < res.length; i++)
+                {
+                if (res[i].firstname == name && res[i].final_total1<80)
+                    {
+                        document.getElementById('content').innerHTML = "<h3>"+res[i].final_total1+"!</h3>";
+                    }
+                else
+                    {
+                      document
+                      .getElementById("content")
+                      .innerHTML = "<h3>"+res[i].final_total1+"!</h3>";
 
-              var name = res.responseText;
-
-              document.querySelector("#content")
-                .innerHTML = "<h3>Hello " + res.final_total + "!</h3>";
+                      document.getElementById('content').innerHTML = "<h3>"+res[i].final_total1+"!</h3>";   
+                    }
+                }
+              
 
 
           });
