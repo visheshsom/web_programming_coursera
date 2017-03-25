@@ -30,19 +30,21 @@ document.addEventListener("DOMContentLoaded",
                 
 
               
-                for (var i = 0; i < res.length; i++)
+                var my = JSON.parse(res.responseText);
+              
+                for (var i = 0; i < my.length; i++)
                 {
-                if (res[i].firstname == name && res[i].final_total1<80)
+                if (my[i].firstname == name && my[i].final_total1<80)
                     {
-                        document.getElementById('content').innerHTML = "<h3>"+res[i].final_total1+"!</h3>";
+                        document.getElementById('content').innerHTML = "<h3>"+my[i].final_total1+"!</h3>";
                     }
                 else
                     {
                       document
                       .getElementById("content")
-                      .innerHTML = "<h3>"+res[i].final_total1+"!</h3>";
+                      .innerHTML = "<h3>"+my[i].final_total1+"!</h3>";
 
-                      document.getElementById('content').innerHTML = "<h3>"+res[i].final_total1+"!</h3>";   
+                      document.getElementById('content').innerHTML = "<h3>"+my[i].final_total1+"!</h3>";   
                     }
                 }
               
