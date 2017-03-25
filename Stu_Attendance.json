@@ -1,4 +1,4 @@
-{
+[{
 	"firstname":"Vishesh",
 	
 	"Courses":"JAVA",
@@ -9,7 +9,7 @@
 	
 	"Flag":true
 			
-}
+},
 {
 	"firstname":"Siddharth",
 
@@ -21,7 +21,7 @@
 
 	"Flag":false
 			
-}
+}];
 	
 
 
