@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded",
       .addEventListener("click", function () {
         
         $ajaxUtils
-          .sendGetRequest("JSON_DATA/Stu_Attendance.json",
+          .sendGetRequest("Stu_Attendance.json",
             
             function (res) 
             {
