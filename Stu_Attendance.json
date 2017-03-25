@@ -1,5 +1,5 @@
-[{
-	"firstname":"Vishesh",
+{
+	"firstname":"vishesh",
 	
 	"Courses":"JAVA",
 			
@@ -7,21 +7,18 @@
 			
 	"AttendanceLecture1":50,
 	
-	"Flag":true
-			
-},
-{
-	"firstname":"Siddharth",
-
-	"Courses":"JAVA",
+	"firstname1":"siddharth",
+	
+	"Courses1":"Web Programming",
 			
 	"Attendance_Theory2":50,
 			
-	"AttendanceLecture2":50,
+	"AttendanceLecture2":50
+	
+	
+}
 
-	"Flag":false
-			
-}]
+
 	
 
 
