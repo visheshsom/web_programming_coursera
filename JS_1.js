@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded",
       .addEventListener("click", function () {
         
         $ajaxUtils
-          .sendGetRequest("Stu_Attendance.json", 
+          .sendGetRequest("JSON_DATA/Stu_Attendance.json",
             
             function fetch_student(res) 
             {
@@ -14,35 +14,35 @@ document.addEventListener("DOMContentLoaded",
               var name = 
             document.getElementById("s_name").value;
               
-               
+              
 
-                attenT1=40;
-                attenL1=30;
-                student_total1=attenL1+attenT1;
-                total_atten1=res.Attendance_Theory1+res.AttendanceLecture1;
-                final_total1=student_total1/total_atten1*100;
+               var  attenT1=40;
+               var  attenL1=30;
+               var  student_total1=attenL1+attenT1;
+               var  total_atten1=res.Attendance_Theory1+res.AttendanceLecture1;
+               var final_total1=student_total1/total_atten1*100;
 
                 attenT1=40;
                 attenL1=30;
                 student_total1=attenL1+attenT1;
                 total_atten1=res.Attendance_Theory2+res.AttendanceLecture2;
-                final_total1=student_total1/total_atten1*100
+                final_total1=student_total1/total_atten1*100;
                 
-
+                
               
                 for (var i = 0; i < res.length; i++)
                 {
-                if (res[i].firstname == name && res[i].final_total1<80)
+                if (res[i].firstname === name && res[i].final_total1<80)
                     {
-                        document.getElementById('content').innerHTML = "<h3>"+res[i].final_total1+"!</h3>";
+                        document.getElementById('content').innerHTML = res[i].final_total1;
                     }
                 else
                     {
                       document
                       .getElementById("content")
-                      .innerHTML = "<h3>"+res[i].final_total1+"!</h3>";
+                      .innerHTML = res[i].final_total1;
 
-                      document.getElementById('content').innerHTML = "<h3>"+res[i].final_total1+"!</h3>";   
+                      document.getElementById('content').innerHTML = res[i].final_total1;   
                     }
                 }
               
