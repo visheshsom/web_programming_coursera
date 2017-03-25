@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded",
               var name = 
             document.getElementById("s_name").value;
               
-              var message = res.firstname 
+               
 
                 attenT1=40;
                 attenL1=30;
@@ -30,21 +30,19 @@ document.addEventListener("DOMContentLoaded",
                 
 
               
-                var my = JSON.parse(res.responseText);
-              
-                for (var i = 0; i < my.length; i++)
+                for (var i = 0; i < res.length; i++)
                 {
-                if (my[i].firstname == name && my[i].final_total1<80)
+                if (res[i].firstname == name && res[i].final_total1<80)
                     {
-                        document.getElementById('content').innerHTML = "<h3>"+my[i].final_total1+"!</h3>";
+                        document.getElementById('content').innerHTML = "<h3>"+res[i].final_total1+"!</h3>";
                     }
                 else
                     {
                       document
                       .getElementById("content")
-                      .innerHTML = "<h3>"+my[i].final_total1+"!</h3>";
+                      .innerHTML = "<h3>"+res[i].final_total1+"!</h3>";
 
-                      document.getElementById('content').innerHTML = "<h3>"+my[i].final_total1+"!</h3>";   
+                      document.getElementById('content').innerHTML = "<h3>"+res[i].final_total1+"!</h3>";   
                     }
                 }
               
