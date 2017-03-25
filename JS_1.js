@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded",
         $ajaxUtils
           .sendGetRequest("Stu_Attendance.json",
             
-            function fetch_student(res) 
+            function (res) 
             {
               
               var name = 
