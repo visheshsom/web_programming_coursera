@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded",
       .addEventListener("click", function () {
         
         $ajaxUtils
-          .sendGetRequest("Stu_Attendance.json",
+          .sendGetRequest("JSON_DATA/Stu_Attendance.json",
             
             function (res) 
             {
@@ -18,16 +18,17 @@ document.addEventListener("DOMContentLoaded",
 			   var jName = res.firstname;
                var jName1 = res.firstname1;
 			    
-			   var attenT1=50;
-               var attenL1=50;
+			   var attenT1=40;
+               var attenL1=40;
                var student_total1=attenL1+attenT1;
-               var total_atten1=res.Attendance_Theory1+res.AttendanceLecture1;
+               var total_atten1=Number(res.Attendance_Theory1+res.AttendanceLecture1);
                var final_total1=student_total1/total_atten1*100;
 				
-			   var  attenT1_s=20;
-               var  attenL1_s=30;
+			
+			   var  attenT1_s=23;
+               var  attenL1_s=20;
                var  student_total1_s=attenL1_s+attenT1_s;
-               var  total_atten1_s=res.Attendance_Theory2+res.AttendanceLecture2;
+               var  total_atten1_s=Number(res.Attendance_Theory2+res.AttendanceLecture2);
                var  final_total1_s=student_total1_s/total_atten1_s*100;
                 
 				
