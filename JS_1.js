@@ -32,26 +32,23 @@ document.addEventListener("DOMContentLoaded",
                var  final_total1_s=student_total1_s/total_atten1_s*100;
                 
 				
-                if (jName === name) 
+                if (jName === name && final_total1<80) 
                     {
-			if(final_total1<80)
-			{
+			
 			 	document.querySelector('#content1')
 				.innerHTML = "<h4>"+jName+" : You've less Attendance in : " +res.Courses+ "</h4>";
 				document.querySelector('#content')
 				.innerHTML = "<h4>Attendence = " +final_total1+ "%</h4>";
-		        }
 		    }
 
-		else if (jName1 === name)
+		else if (jName1 === name && final_total1_s<80)
 		  {
-			if(final_total1_s<80)
-			{
+			
 			     document.querySelector('#content1')
 			     .innerHTML = "<h4>"+jName1+" : You've less Attendance in : " +res.Courses1+ "</h4>";
 			     document.querySelector('#content')
 			     .innerHTML = "<h4>Attendence = " +final_total1_s+ "%</h4>";
-			}
+			
 					
 		}
                 else
