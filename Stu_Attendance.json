@@ -1,5 +1,5 @@
 {
-	"firstname":"vishesh",
+	"firstname":"Vishesh",
 	
 	"Courses":"JAVA",
 			
@@ -7,13 +7,16 @@
 			
 	"AttendanceLecture1":50,
 	
-	"firstname1":"siddharth",
+	
+	"firstname1":"Siddharth",
 	
 	"Courses1":"Web Programming",
 			
 	"Attendance_Theory2":50,
 			
 	"AttendanceLecture2":50
+	
+	
 }
 
 
