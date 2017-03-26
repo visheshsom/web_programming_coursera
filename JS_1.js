@@ -18,8 +18,8 @@ document.addEventListener("DOMContentLoaded",
 			   var jName = res.firstname;
                var jName1 = res.firstname1;
 			    
-			   var attenT1=15;
-               var attenL1=13;
+			   var attenT1=47;
+               var attenL1=40;
                var student_total1=attenL1+attenT1;
                var total_atten1=Number(res.Attendance_Theory1+res.AttendanceLecture1);
                var final_total1=student_total1/total_atten1*100;
