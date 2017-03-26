@@ -18,8 +18,8 @@ document.addEventListener("DOMContentLoaded",
 	       var jName = res.firstname;
                var jName1 = res.firstname1;
 			    
-	       var attenT1=40;
-               var attenL1=40;
+	       var attenT1=23;
+               var attenL1=17;
                var student_total1=attenL1+attenT1;
                var total_atten1=Number(res.Attendance_Theory1+res.AttendanceLecture1);
                var final_total1=student_total1/total_atten1*100;
@@ -42,17 +42,8 @@ document.addEventListener("DOMContentLoaded",
 				.innerHTML = "<h4>Attendence = " +final_total1+ "%</h4>";
 		        }
 		    }
-		 else
-                    {
-                      document
-                      .getElementById("content1")
-                      .innerHTML = "You're not in Defaulters....";
-		      document
-                      .getElementById("content")
-                      .innerHTML = "";
- 
-                    }
-		  if (jName1 === name)
+
+		else if (jName1 === name)
 		  {
 			if(final_total1_s<80)
 			{
@@ -68,7 +59,7 @@ document.addEventListener("DOMContentLoaded",
                       document
                       .getElementById("content1")
                       .innerHTML = "You're not in Defaulters....";
-					  document
+		      document
                       .getElementById("content")
                       .innerHTML = "";
  
