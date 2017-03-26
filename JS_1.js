@@ -51,15 +51,7 @@ document.addEventListener("DOMContentLoaded",
 						.innerHTML = "<h4>Attendence = " +final_total1_s+ "%</h4>";
 					
 				}
-					else if (name === "Piyush"|| name === "piyush")
-				{
-				
-						document.querySelector('#content1')
-						.innerHTML = "<h4>"+ "Saale Bahot Bhaav Khata Hai ,Harami 5:15 ka bol ke call hi nahi kiya, aur haa teri 2 party mese 1 party cancel ho chuki hai.... Next Time Aisa kiya to 1 bachi hai woh bhi jayegi.... " + "</h4>";
-						document.querySelector('#content')
-						.innerHTML = "";
-					
-				}
+			
 				
                 else
                     {
