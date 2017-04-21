@@ -6,39 +6,63 @@ document.addEventListener("DOMContentLoaded",
       .addEventListener("click", function () {
         
         $ajaxUtils
-          .sendGetRequest("Stu_Attendance.json", 
+          .sendGetRequest("Stu_Attendance.json",
             
-            function fetch_student(res) 
+            function (res) 
             {
               
-              var name = document.getElementById("s_name").value;
-              
-              var message = res.firstname 
-              if (message===name) {
+               var number = 
+               document.getElementById("s_no").value;
+
+               var name = res.firstname;
+               var name1= res.firstname1;
+               
+               var sap = res.SAP;
+               var sap1 = res.SAP1;
+               var email = res.Email;
+               var dob = res.DOB;
+               var cgpa = res.CGPA;
+               var contact = res.Contact;
+
+               var email1 = res.Email1;
+               var dob1 = res.DOB1;
+               var cgpa1 = res.CGPA1;
+               var contact1 = res.Contact1;
+
+
                 
-                message += " likes Maxican food";
+				
+                if (number === sap || number === email || number === dob || number === cgpa || number === contact ) 
+                {
+					
+						    
+                          document
+                      .getElementById("content1")
+                      .innerHTML = name;
+						
+                }
+                else if (number === sap1 || number === email1 || number === dob1 || number === cgpa1 || number === contact1 ) 
+                {
+               
+                
+                        document
+                      .getElementById("content1")
+                      .innerHTML = name1;
 
-                attenT=40;
-                attenL=30;
-                student_total=attenL+attenT;
-                total_atten=res.Attendance_Theory1+res.AttendanceLecture1;
-                final_total=student_total/total_atten*100;
-              }
-              else 
-              {
-                message += " Doesn't like Maxican food";
-              }
-              
-              document.querySelector("#content")
-                .innerHTML = "<h2>" + res.message + "</h2>";
-
-              var name = res.responseText;
-
-              document.querySelector("#content")
-                .innerHTML = "<h2>Hello " + res.name + "!</h2>";
-
-
-          });
+                }
+			
+			    
+				
+                else
+                    {
+                      document
+                      .getElementById("content1")
+                      .innerHTML = "Data Not Found";
+					           
+ 
+                    }
+                
+           });
       });
   }
 );
