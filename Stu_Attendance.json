@@ -1,46 +1,35 @@
-{"Vishesh":
-	[
-		{"Courses":
-			[
-				{"JAVA"}
-			]
-		}
-		{"AttendanceTV":
-			[
-				{"JAVA":15},
-			
-			]
-		}
-		{"AttendanceLV":
-			[
-				{"JAVA":20},
-			
-			]
-		}
+{
 	
-	]
-}
- 
-{"Siddharth":
-	[
-		
-		{"Courses":
-			[
-				{"JAVA"}
-			]
-		}
-		{"AttendanceTS":
-			[
-				{"JAVA":15},
-			
-			]
-		}
-		{"AttendanceLS":
-			[
-				{"JAVA":20},
-			
-			]
-		}
+	"SAP":"7001",
+
+	"firstname":"Vishesh",
 	
-	]
+	"Email":"visheshsom@gmail.com",
+			
+	"Contact":99,
+			
+	"DOB":"22-09-1997",
+	
+	"CGPA":1,
+	
+	
+	"SAP1":"7002",
+
+	"firstname1":"Siddharth",
+	
+	"Email1":"sidd@gmail.com",
+			
+	"Contact1":875,
+			
+	"DOB1":"11-07-1998",
+	
+	"CGPA1":2	
+	
+	
 }
+
+
+	
+
+
+
